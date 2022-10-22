@@ -1,8 +1,11 @@
 
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Poppins', sans-serif;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     color: #f0f8ff;
     background: linear-gradient(0deg, rgb(89, 16, 156, 0.5), rgb(89, 16, 156, 0.5)), url(./media/survey-form-background.jpeg) no-repeat center fixed;
@@ -50,8 +53,8 @@ header {
 input, select, textarea {
     color: rgb(145, 145, 145);
     border-radius: 5px;
-    font-size: 90%;
-    padding: 0.6em 1em;
+    font-size: 85%;
+    padding: 0.4em 1em;
     width: 100%;
     margin: 8px 0;
     box-sizing: border-box;
