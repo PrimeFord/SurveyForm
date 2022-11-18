@@ -1,72 +1,129 @@
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    font-family: 'Poppins', sans-serif;
-    height: 100%;
-    width: 100vw;
-    text-align: center;
-    color: #f0f8ff;
-    background: linear-gradient(0deg, rgb(89, 16, 156, 0.5), rgb(89, 16, 156, 0.5)), url(./media/survey-form-background.jpeg) no-repeat center fixed;
-    background-size: cover;
-    background-color: rgb(88, 88, 155);
-    line-height: 4px;
-    z-index: -1;
-    padding-top: 3em;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100vw;
+  text-align: center;
+  color: #f0f8ff;
+  background: linear-gradient(
+      0deg,
+      rgb(89, 16, 156, 0.5),
+      rgb(89, 16, 156, 0.5)
+    ),
+    url(./media/survey-form-background.jpeg) no-repeat center fixed;
+  background-size: cover;
+  background-color: rgb(88, 88, 155);
+  line-height: 0.25rem;
+  z-index: -1;
+  padding-top: 3rem;
 }
 /* was checking this out */
 /* .image-overlay {
     /* margin-top: ; */
-    /* height: 100%;
+/* height: 100%;
     width: 100%;
     background-color: rgb(89, 16, 156, 0.5);
     background-size: cover;
     z-index: 4; */
 /* } */
 header {
-    margin: 4em;
+  margin: 3rem;
 }
 #title {
-    font-size: 2em;
-    letter-spacing: 0.5px;
-    font-weight: 550;
-    margin-bottom: 1em;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  font-weight: 550;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 #description {
-    font-weight: lighter;
-    font-style: italic;
-    margin-bottom: 1em;
+  font-weight: lighter;
+  font-style: italic;
+  margin-bottom: 1rem;
 }
 #survey-form {
-    background-color: #272745;
-    width: 50%;
-    margin: auto;
-    /* margin-left: 20em;
+  background-color: #272745;
+  width: 50%;
+  margin: auto;
+  /* margin-left: 20em;
     margin-right: 20em; */
-    border-radius: 5px;
-    text-align: left;
-    padding: 4rem 3rem;
-    font-size: 20px;
-    line-height: 30px;
+  border-radius: 5px;
+  text-align: left;
+  padding: 4rem 3rem;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
 }
-input, select, textarea {
-    color: rgb(145, 145, 145);
-    border-radius: 5px;
+input,
+select,
+textarea {
+  color: rgb(145, 145, 145);
+  border-radius: 0.3rem;
+  font-size: 85%;
+  padding: 0.4em 1em;
+  width: 100%;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin: 0.9rem;
+}
+#submit {
+  background-color: #37af65;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 640px) {
+  :root {
+    font-size: 0.5rem;
+  }
+  body {
+    line-height: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  header {
+    margin: 0.5rem;
+  }
+  #title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  #description {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+  }
+  #survey-form {
+    width: 80%;
+    margin: auto;
+    border-radius: 2px;
+    text-align: left;
+    padding: 3rem 3rem;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+  input,
+  select,
+  textarea {
+    border-radius: 0.15rem;
     font-size: 85%;
     padding: 0.4em 1em;
     width: 100%;
-    margin: 8px 0;
+    margin: 0.5rem 0;
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+    width: 1rem;
+    margin: 1rem;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-input[type=radio], input[type=checkbox] {
-    width: auto;
-    margin: 14px;
-}
-#submit {
-    background-color: #37af65;
-    color: white;
-    border: none;
-    cursor: pointer;
+    vertical-align: middle;
+  }
 }
